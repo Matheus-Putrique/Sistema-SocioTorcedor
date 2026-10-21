@@ -6,7 +6,8 @@ public enum RegiaoEstadio {
     CONVES_INFERIOR("Conves-Inferior", 18000, 150.00),
     ANEL_PANORAMICO("Anel-Panoramico", 15000, 140.00),
     TERRACO_VIP("Terraco-Vip", 3000, 350.00),
-    SUITES_EXECUTIVAS("Suites-Executivas", 1500, 600.00),;
+    SUITES_EXECUTIVAS("Suites-Executivas", 1500, 600.00),
+    CURVA_NORTE("Curva-Norte", 2000, 100.00),;
 
     private String nome;
     private int capacidade;
@@ -41,4 +42,5 @@ public enum RegiaoEstadio {
     public void setPreco(double preco) {
         this.preco = preco;
     }
+
 }

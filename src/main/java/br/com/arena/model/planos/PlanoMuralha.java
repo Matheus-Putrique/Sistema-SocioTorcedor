@@ -7,21 +7,25 @@ public class PlanoMuralha implements ModalidadeSocio {
 
     @Override
     public String retornarPlano() {
-        return null;
+        return "Plano Muralha";
     }
 
     @Override
     public boolean acessoDoPlano(RegiaoEstadio regiaoEstadio) {
+        if(regiaoEstadio == RegiaoEstadio.MURALHA_SUL){
+            return true;
+        }
+
         return false;
     }
 
     @Override
     public LocalDateTime inicioCheckin(LocalDateTime dataHoraPartida) {
-        return null;
+        return dataHoraPartida.minusHours(48);
     }
 
     @Override
     public LocalDateTime fimCheckin(LocalDateTime dataHoraPartida) {
-        return null;
+        return dataHoraPartida.minusHours(24);
     }
 }
