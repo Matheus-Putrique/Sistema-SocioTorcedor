@@ -7,7 +7,7 @@ public enum RegiaoEstadio {
     ANEL_PANORAMICO("Anel-Panoramico", 15000, 140.00),
     TERRACO_VIP("Terraco-Vip", 3000, 350.00),
     SUITES_EXECUTIVAS("Suites-Executivas", 1500, 600.00),
-    CURVA_NORTE("Curva-Norte", 2000, 100.00),;
+    CURVA_NORTE("Curva-Norte", 2000, 100.00);
 
     private String nome;
     private int capacidade;
@@ -23,24 +23,15 @@ public enum RegiaoEstadio {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public int getCapacidade() {
         return capacidade;
     }
 
-    public void setCapacidade(int capacidade) {
-        this.capacidade = capacidade;
-    }
 
     public double getPreco() {
         return preco;
     }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
+    
 
 }
