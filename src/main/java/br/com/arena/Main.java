@@ -1,5 +1,6 @@
 package br.com.arena;
 
+import br.com.arena.config.InicializadorBanco;
 import br.com.arena.model.Checkin;
 import br.com.arena.model.Partida;
 import br.com.arena.model.Socio;
@@ -13,7 +14,7 @@ import java.time.LocalDateTime;
 
 public class Main{
     public static void main(String[] args){
-
+        InicializadorBanco.inicializar();
         ServicoCheckin checkin = new ServicoCheckin();
 
         Partida partida = new Partida(1L, "Flamengo", LocalDateTime.now().plusHours(36));
