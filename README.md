@@ -66,7 +66,7 @@ src/main/java/br/com/arena/
 │   │   └── StatusSocio.java           # Enum (ATIVO, INADIMPLENTE, SUSPENSO)
 │   └── planos/
 │       ├── ModalidadeSocio.java       # Interface de contrato dos planos (Strategy / Polimorfismo)
-│       ├── FabricaPlano.java          # Factory para reconstruir o plano a partir do banco de dados
+│       ├── EscolhaPlano.java          # Factory para reconstruir o plano a partir do banco de dados
 │       ├── PlanoMuralha.java
 │       ├── PlanoTradicao.java
 │       ├── PlanoImperial.java
